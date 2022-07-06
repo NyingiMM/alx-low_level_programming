@@ -8,8 +8,9 @@
  */
 void print_alphabet_x10(void)
 {
-	int 1, lowercase;
-	
+	int i, lowercase;
+
+
 	for (i = 1; i <= 10; i++)
 	{
 		for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
