@@ -1,4 +1,4 @@
-#includ "main"
+#include "main"
 /**
  * mul - multiplier
  * @a: int to mult
