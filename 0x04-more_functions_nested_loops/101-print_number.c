@@ -1,45 +1,24 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
- * print_number - prints number
- *
- * @n: integer to print to character
+ * print_number - prints inters with putchar
+ * @n: returns a number
+ * Return: void
  */
 void print_number(int n)
 {
-	int i;
-	int d = 1;
-	unsigned int x = n;
-	unsigned int y = n;
-	int c = 0;
+	unsigned int u;
 
-	if (n == 0)
-	{
-		_putchar('0');
-	}
 	if (n < 0)
 	{
-		_putchar('-');
-		n = n + 1;
-		n = -n;
-		y = n;
-		x = n;
-		x += 1;
-		y += 1;
+		_putchar('_');
+		u = -n;
 	}
-	while (x != 0)
+	else
 	{
-		x = x / 10;
-		c++;
+		u =n;
 	}
-	for (i = 1; i < c; i++)
-	{
-		d *= 10;
-	}
-	for (i = 0; i < c; i++)
-	{
-		_putchar(y / d + '0');
-		y = y % d;
-		d = d / 10;
-	}
+	if (u / 10 != 0)
+		print_number(u / 10);
+	_putchar((u % 10) + '0');
 }

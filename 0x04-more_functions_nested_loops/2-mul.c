@@ -7,5 +7,5 @@
  */
 int mul(int a, int b)
 {
-	printf(a * b);
-i}
+	return (a * b);
+}

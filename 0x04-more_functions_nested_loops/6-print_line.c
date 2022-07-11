@@ -1,18 +1,22 @@
 #include "main.h"
 /**
- * print_most_numbers - prints the numbers
- *
+ * print_line - draws a straight line
+ * @n: integer parameters
+ * Return: 0
  */
-void print_most_numbers(void)
+void print_line(int n)
 {
-	int i;
+	int x;
 
-	for (i = '0'; i <= '9'; i++)
+	if (n > 0)
 	{
-		if (i != '2' &&  i != '4')
+		for (i = 0; i < n; i++)
 		{
-			_putchar(i);
+			_putchar (96);
+		}
+		else
+		{
+			_putchar ('\n');
 		}
 	}
-	_putchar('\n');
 }
