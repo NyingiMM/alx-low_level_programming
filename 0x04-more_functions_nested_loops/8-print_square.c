@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  * print_square - prints square stuff
- *
  * @size: integer to set square size
+ * Return: Always 0
  */
 void print_square(int size)
 {
 	int i;
 	int j;
 
-	if (size <= 0)
+	if (size > 0)
 	{
 		for (i = 0; i < size; i++)
 		{
