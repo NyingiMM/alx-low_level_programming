@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_more_numbers - prints the numbers o 14 ten times
+ * more_numbers - prints the numbers o 14 ten times
  * Return: noting
  */
 void more_numbers(void)
